@@ -9,12 +9,12 @@ const Popup = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={harold} className="App-logo" alt="logo" /> 
-        <p>
-          This is some sketchy shit man!
-        </p> 
-        <div className="flex justify-center bg-gray-900">
-          <RoundedRedButton onClick={() => void(0)}>Tell me, great oracle, if my data is secure!</RoundedRedButton>
+        <div className="flex items-center gap-4">
+          {/* <img src={harold} alt="" className="size-5 rounded-lg object-cover"/> */}
+          <div>
+            <h3 className="text-lg/tight font-medium text-gray-900">PawPaw detects something suspicious!</h3>
+            <p className="text-sm/tight text-gray-500">PawPaw is a Chrome extension that detects suspicious behavior on the web.</p>
+          </div>
         </div>
       </header> 
     </div>
