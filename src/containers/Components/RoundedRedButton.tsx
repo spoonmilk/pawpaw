@@ -1,4 +1,5 @@
  import * as React from 'react';
+import greet_gpt from '../../scripts/openAIFramework';
  
  interface ButtonProps {
    onClick: () => void;
@@ -11,6 +12,7 @@
  
    const handleClick = () => {
      setIsClicked(!isClicked);
+     greet_gpt();
      onClick();
    };
  
