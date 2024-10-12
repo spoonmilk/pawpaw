@@ -10,11 +10,8 @@
    const [isClicked, setIsClicked] = React.useState(false);
  
    const handleClick = () => {
-     setIsClicked(true);
+     setIsClicked(!isClicked);
      onClick();
-     setTimeout(() => {
-       setIsClicked(false);
-     }, 200);
    };
  
    return (
